@@ -1,2 +1,10 @@
-# stock-analysis
+# Stock Analysis with VBA Coding
 Module 2 on VBA Scripting
+## Overview of Project
+### The Goal of this porject was to help our friend Steve Analyze Green stocks in 2017 and 2018. He wanted to help his parents select what stocks to invest in through our analysis. We used nested for loops to calculate the total volume and the yearly return. Steve was happy with our results. However, we refactored the code to make it more efficient and more user friendly for larger data samples. 
+
+## Results of work
+### There was very little variability in run times between the sheets (years) when using the same macros for both. If you look at the run time for Resources/2017.PNG and Resources/2018.PNG (these are the original code run times), you can see they both took close to 300 milliseconds. There was a slight variance of about 20 ms between the two. Similarly,the refactored code had similar run time for the two sheets. Resources/VBA_Challenge_2017 and Resources/VBA_Challenge_2018 show that were only about 4 ms variance of runtime bewteen the two of them. The run time variance for the refactored code is much less than that of the original code, which is mostly due to a shorter run time in general. The refactored code took, on average, about 1/4 of the time of the original time.
+## Summary of work
+### The major advantage of refactoring code is to make it more efficient. Usually the initial write of code is not the best way to write it. Thus, refactoring it could make it more applicable to larger (and more variable) data sets and make it quicker. One major disadvantage to refactoring code is time. To find teh best way to write the code, it requries going back over the code and finding the best ways to do it, this takes time away from working on other projects.
+### one advantage of the original code is that it doesn't take up as much memory, the results for each ticker is output as it is calculated, then forgotten about as we move on to the next ticker. Its disadvantage is runtime. Inversely, the refactored code is quicker but stores the data for each cell while it computes the all of the data. It then outputs all of the data at the end.
